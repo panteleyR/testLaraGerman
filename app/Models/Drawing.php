@@ -34,8 +34,8 @@ class Drawing extends Model
     protected $casts = [
     ];
 
-    public function users()
+    public function user()
     {
-        return $this->hasOne('App\Models\User', 'user_id');
+        return $this->belongsTo('App\Models\User');
     }
 }

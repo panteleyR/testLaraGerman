@@ -15,9 +15,11 @@ class CreateDrawingsTable extends Migration
     {
         Schema::create('drawings', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id');
+            $table->unsignedBigInteger('user_id');
             $table->string('url');
             $table->timestamps();
+
+//            Тут надо короче еще каскады зафигачить, если софтделит не используем
         });
     }
 
