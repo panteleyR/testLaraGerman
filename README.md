@@ -1,6 +1,7 @@
 ## Запуск проекта
 - Подключите как-то свою базу, я лично локально себе маридб закинул, докер у меня резко сломался, так что было не до этого
 - env
+- composer install
 - php artisan migrate
 - php artisan db:seed
 - php artisan serve
